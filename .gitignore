@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.vscode/
+*.exe
+/preview*.png
+/*-preview.png
+/waybill-preview.png
+/\!i.complete
+/({alt
+/i.src)})

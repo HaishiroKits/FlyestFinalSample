@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLYEST — Made With Style</title>
+  <link rel="icon" type="image/jpeg" href="Flyest Logo.jpg" />
+  <link rel="stylesheet" href="liberation-font.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store-assistant.css" />
+  <link rel="stylesheet" href="product-preview.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="quantity.css" />
+  <link rel="stylesheet" href="store-nav.css" />
+  <link rel="stylesheet" href="white-theme.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="primary-nav" id="nav" aria-label="Main navigation">
+      <div class="primary-nav-item shop-menu">
+        <button class="primary-nav-link shop-menu-toggle" type="button" aria-expanded="false" aria-controls="shopMegaMenu">Shop <span aria-hidden="true">⌄</span></button>
+        <div class="shop-mega-menu" id="shopMegaMenu">
+          <div class="shop-mega-categories" role="tablist" aria-label="Shop categories">
+            <button class="mega-category is-active" type="button" role="tab" aria-selected="true" data-mega-category="clothing">Clothing <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="mens">Men's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="womens">Women's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="accessories">Accessories <span aria-hidden="true">›</span></button>
+          </div>
+          <div class="shop-mega-panels">
+            <section class="shop-mega-panel is-active" role="tabpanel" data-mega-panel="clothing"><h2>Clothing</h2>
+              <a href="shop.html?category=shirts">Tees</a><a href="shop.html?category=hoodies">Hoodies</a><a href="shop.html?category=sweaters">Sweaters</a><a href="shop.html?category=polos">Polos</a><a href="shop.html?category=pants">Pants</a><a href="shop.html?category=shorts">Shorts</a><a href="shop.html?category=footwear">Footwear</a>
+            </section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="mens" hidden><h2>Men's</h2><a href="shop.html?category=mens">Shop Men's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="womens" hidden><h2>Women's</h2><a href="shop.html?category=womens">Shop Women's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="accessories" hidden><h2>Accessories</h2><a href="shop.html?category=headwear">Headwear</a></section>
+          </div>
+        </div>
+      </div>
+      <a class="primary-nav-link" href="index.html#new-collection">New Collections</a>
+      <a class="primary-nav-link" href="index.html#best-seller">Best Seller</a>
+    </nav>
+    <a class="logo" href="index.html">FLYEST</a>
+    <div class="header-actions">
+      <a class="header-signup icon-btn" href="index.html#communitySignup" aria-label="Sign up for collection alerts" title="Sign up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="8" r="3.5"></circle>
+          <path d="M3 20v-1.5a6 6 0 0 1 12 0V20M19 8v6M16 11h6"></path>
+        </svg>
+      </a>
+      <button class="icon-btn store-search-trigger" type="button" data-store-search aria-label="Search clothing">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <img class="cart-icon" src="Cart Logo.png" alt="" />
+        <span class="cart-label">CART</span>
+        <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="storefront-products" id="shop">
+    <section class="home-hero" aria-label="FLYEST collection cover">
+      <img class="home-hero-image" src="COVER LAYOUT.png" alt="FLYEST collection campaign featuring the latest streetwear" fetchpriority="high" />
+    </section>
+    <section class="shop-products home-collection" id="new-collection" aria-labelledby="newCollectionTitle">
+      <h1 id="newCollectionTitle">New Collection</h1>
+      <div class="grid shop-grid" id="productGrid" aria-label="New Collection hoodies"></div>
+    </section>
+    <section class="shop-products home-collection" id="best-seller" aria-labelledby="bestSellerTitle">
+      <h2 id="bestSellerTitle">Best Seller</h2>
+      <div class="grid shop-grid" id="shirtFeatureGrid" aria-label="Best Seller tees"></div>
+
+  <footer class="store-footer">
+    <div class="store-footer-main">
+      <div class="footer-community">
+        <h2>Join the Community</h2>
+        <p>Follow FLYEST for new drops and restocks.</p>
+        <div class="footer-socials" aria-label="Join the Flyest community">
+          <a href="https://www.facebook.com/profile.php?id=61577683104490" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.8l.4-3.1h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@flyest.worldwide" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 8.3a7.1 7.1 0 0 1-4.4-1.5v7.1a6.3 6.3 0 1 1-5.4-6.2v3.6a2.8 2.8 0 1 0 1.9 2.6V2.5h3.5c.2 2.4 1.7 4.2 4.4 4.6v3.5Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/flyest.ph/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2.8h9A4.7 4.7 0 0 1 21.2 7.5v9a4.7 4.7 0 0 1-4.7 4.7h-9a4.7 4.7 0 0 1-4.7-4.7v-9a4.7 4.7 0 0 1 4.7-4.7Zm0 2A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm4.5 2.1a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2Zm0 2a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.3-3.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg>
+          </a>
+        </div>
+        <form class="community-signup" id="communitySignup">
+          <label for="communityEmail">Sign up for drop &amp; collection alerts</label>
+          <div class="community-signup-row">
+            <input id="communityEmail" type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+            <button type="submit">SIGN UP</button>
+          </div>
+          <p class="community-signup-status" id="communitySignupStatus" aria-live="polite">We’ll open an email so you can request new-drop notifications.</p>
+        </form>
+      </div>
+      <div class="footer-links">
+        <section>
+          <h2>Shop</h2>
+          <a href="index.html#new-collection">New Arrivals</a>
+          <a href="index.html#best-seller">Best Sellers</a>
+        </section>
+        <section>
+          <h2>Company</h2>
+          <a href="about.html">About</a>
+          <a href="flyest-story.html">Story</a>
+        </section>
+        <section>
+          <h2>Customer Service</h2>
+          <a href="help.html#contact">Contact</a>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#track-order">Track My Order</a>
+          <a href="help.html#returns">Return Center</a>
+        </section>
+        <section class="footer-contact">
+          <h2>Contact</h2>
+          <a href="tel:09673103267">09673103267</a>
+          <a href="mailto:flyestclothing.ph@gmail.com">flyestclothing.ph@<wbr>gmail.com</a>
+          <span>WhatsApp: Soon</span>
+        </section>
+      </div>
+    </div>
+    <div class="store-footer-bottom">
+      <p>© 2026 FLYEST. MADE WITH STYLE.</p>
+      <div class="footer-social-links">
+        <a href="https://www.instagram.com/flyest.ph/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61577683104490" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@flyest.worldwide" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div class="cart-head-copy">
+        <span class="cart-head-kicker">FLYEST · YOUR PICKS</span>
+        <div class="cart-head-title-row"><span class="cart-head-title">Your Cart</span><span class="cart-head-count" id="cartHeaderCount">0 ITEMS</span></div>
+      </div>
+      <button class="icon-btn cart-close-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span class="cart-empty-mark" aria-hidden="true">F</span>
+        <p class="cart-empty-title">Your next favorite belongs here.</p>
+        <p class="cart-empty-note">Explore the collection and find the piece that feels like you.</p>
+        <a class="cart-empty-link" href="#new-collection">EXPLORE THE COLLECTION <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-shipping-note"><span class="cart-shipping-check" aria-hidden="true">↗</span><span>Worldwide shipping rates at checkout</span><span class="cart-shipping-courier">J&amp;T</span></div>
+      <div class="cart-total-row"><span>Subtotal</span><span id="cartTotal">₱0.00</span></div>
+      <p class="cart-total-caption">Shipping is calculated at checkout based on destination.</p>
+      <button class="btn checkout-btn" id="checkoutBtn"><span>CONTINUE TO CHECKOUT</span><span class="checkout-arrow" aria-hidden="true">↗</span></button>
+      <a class="cart-continue-shopping" href="#new-collection">CONTINUE EXPLORING</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" id="closeCheckout" aria-label="Close">✕</button>
+
+      <div id="checkoutStep1">
+        <h3 class="modal-title">CHECKOUT</h3>
+        <form id="checkoutForm">
+          <label>EMAIL<input type="email" id="email" placeholder="you@email.com" required /></label>
+          <label>FULL NAME<input type="text" id="name" placeholder="Juan Dela Cruz" required /></label>
+          <label>PHONE NUMBER<input type="tel" id="phone" placeholder="09XXXXXXXXX" required pattern="09[0-9]{9}" maxlength="11" /></label>
+          <label>HOUSE / UNIT NO.<input type="text" id="house" placeholder="123, Unit 4" required /></label>
+          <label>STREET<input type="text" id="street" placeholder="Rizal St." required /></label>
+          <div class="row">
+            <label>BARANGAY<input type="text" id="barangay" placeholder="Barangay" required /></label>
+            <label>CITY / MUNICIPALITY<input type="text" id="city" placeholder="City" required /></label>
+          </div>
+          <div class="row">
+            <label>PROVINCE<input type="text" id="province" placeholder="Province" required /></label>
+            <label>POSTAL CODE<input type="text" id="postal" placeholder="4027" required maxlength="4" pattern="[0-9]{4}" /></label>
+          </div>
+          <label>SHIPPING NOTES (OPTIONAL)<input type="text" id="notes" placeholder="Landmark, delivery instructions..." /></label>
+          <h4 class="pay-title">PAYMENT METHOD</h4>
+          <div class="pay-options">
+            <label class="pay-option">
+              <input type="radio" name="payment" value="GCash" checked />
+              <img src="Gcash Logo.png" alt="GCash" />
+              <span>GCASH</span>
+            </label>
+            <label class="pay-option">
+              <input type="radio" name="payment" value="Atome" />
+              <img src="InstaPay Logo.png" alt="Atome" />
+              <span>ATOME</span>
+            </label>
+          </div>
+          <p class="pay-note" id="payNote">You'll scan the GCash QR to pay after placing your order.</p>
+          <button type="submit" class="btn checkout-btn">PLACE ORDER — <span id="payAmount"></span></button>
+        </form>
+
+        <div class="also-like">
+          <h4 class="pay-title">YOU MIGHT ALSO LIKE</h4>
+          <div class="also-grid" id="alsoGrid"></div>
+        </div>
+      </div>
+
+      <div id="checkoutStepPay" class="hidden">
+        <h3 class="modal-title">SCAN TO PAY</h3>
+        <p class="pay-amount-line">AMOUNT TO PAY: <strong id="qrAmount">₱0.00</strong></p>
+        <div class="qr-wrap">
+          <img id="qrImage" src="Gcash.jpg" alt="Payment QR code" />
+        </div>
+        <p class="qr-note" id="qrNote">1. Open your GCash app → Scan QR.<br />2. Send the exact amount above.<br />3. Upload your payment screenshot below.</p>
+        <label class="upload-label">PAYMENT RECEIPT / SCREENSHOT<input type="file" id="receiptFile" accept="image/*" required /></label>
+        <div id="receiptPreview" class="receipt-preview hidden"><img alt="Receipt preview" /></div>
+        <button class="btn checkout-btn" id="paidBtn">I HAVE PAID — CONFIRM ORDER</button>
+        <p class="disclaimer">Your order ships after payment is verified.</p>
+      </div>
+
+      <div id="checkoutStep2" class="hidden">
+        <div class="success-mark">✓</div>
+        <h3 class="modal-title">ORDER CONFIRMED</h3>
+        <p class="success-text">Thanks <span id="confirmName"></span>! Your order <span id="orderNo"></span> is being prepared.</p>
+        <p class="success-text">Paid via <span id="confirmPay"></span> — receipt verified. Shipping via J&amp;T Express.</p>
+        <p class="success-text">A receipt was sent to <span id="confirmEmail"></span> and to FLYEST's inbox.</p>
+        <div class="waybill" id="waybill">
+          <div class="waybill-head">
+            <span class="waybill-brand">J&amp;T EXPRESS</span>
+            <span class="waybill-type">STANDARD DELIVERY</span>
+          </div>
+          <div class="waybill-tracking">
+            <span>TRACKING NO.</span>
+            <strong id="waybillTracking"></strong>
+          </div>
+          <div class="waybill-cols">
+            <div class="waybill-col">
+              <h5>SENDER</h5>
+              <p>FLYEST CLOTHING</p>
+              <p>Behind Shell, Brgy. Real,<br />Calamba, Laguna</p>
+              <p>0924 443 0173</p>
+            </div>
+            <div class="waybill-col">
+              <h5>RECEIVER</h5>
+              <p id="wbReceiver"></p>
+              <p id="wbAddress"></p>
+              <p id="wbPhone"></p>
+            </div>
+          </div>
+          <div class="waybill-items">
+            <h5>ITEMS</h5>
+            <p id="wbItems"></p>
+            <p class="waybill-total" id="wbTotal"></p>
+          </div>
+          <div class="waybill-foot">
+            <div class="waybill-cod"><span>COD AMOUNT</span><strong id="wbCod">₱0.00</strong></div>
+            <div class="waybill-barcode" id="wbBarcode"></div>
+          </div>
+        </div>
+        <button class="btn checkout-btn" id="printWaybill">PRINT WAYBILL</button>
+        <button class="btn checkout-btn outline" id="emailReceipt">EMAIL RECEIPT</button>
+        <button class="btn checkout-btn outline" id="doneBtn">CONTINUE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script src="store-assistant.js"></script>
+  <script src="store-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLYEST — Shop the collection</title>
+  <link rel="icon" type="image/jpeg" href="Flyest Logo.jpg" />
+  <link rel="stylesheet" href="liberation-font.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store-assistant.css" />
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="stylesheet" href="product-preview.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="quantity.css" />
+  <link rel="stylesheet" href="store-nav.css" />
+  <link rel="stylesheet" href="white-theme.css" />
+</head>
+<body>
+  <div class="announcement">WORLDWIDE SHIPPING — RATES AT CHECKOUT</div>
+  <header class="header">
+    <nav class="primary-nav" id="nav" aria-label="Main navigation">
+      <div class="primary-nav-item shop-menu">
+        <button class="primary-nav-link shop-menu-toggle" type="button" aria-expanded="false" aria-controls="shopMegaMenu">Shop <span aria-hidden="true">⌄</span></button>
+        <div class="shop-mega-menu" id="shopMegaMenu">
+          <div class="shop-mega-categories" role="tablist" aria-label="Shop categories">
+            <button class="mega-category is-active" type="button" role="tab" aria-selected="true" data-mega-category="clothing">Clothing <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="mens">Men's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="womens">Women's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="accessories">Accessories <span aria-hidden="true">›</span></button>
+          </div>
+          <div class="shop-mega-panels">
+            <section class="shop-mega-panel is-active" role="tabpanel" data-mega-panel="clothing"><h2>Clothing</h2><a href="shop.html?category=shirts">Tees</a><a href="shop.html?category=hoodies">Hoodies</a><a href="shop.html?category=sweaters">Sweaters</a><a href="shop.html?category=polos">Polos</a><a href="shop.html?category=pants">Pants</a><a href="shop.html?category=shorts">Shorts</a><a href="shop.html?category=footwear">Footwear</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="mens" hidden><h2>Men's</h2><a href="shop.html?category=mens">Shop Men's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="womens" hidden><h2>Women's</h2><a href="shop.html?category=womens">Shop Women's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="accessories" hidden><h2>Accessories</h2><a href="shop.html?category=headwear">Headwear</a></section>
+          </div>
+        </div>
+      </div>
+      <a class="primary-nav-link" href="index.html#new-collection">New Collections</a>
+      <a class="primary-nav-link" href="index.html#best-seller">Best Seller</a>
+    </nav>
+    <a class="logo" href="index.html">FLYEST</a>
+    <div class="header-actions">
+    <a class="header-signup icon-btn" href="index.html#communitySignup" aria-label="Sign up for collection alerts" title="Sign up">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="9" cy="8" r="3.5"></circle>
+        <path d="M3 20v-1.5a6 6 0 0 1 12 0V20M19 8v6M16 11h6"></path>
+      </svg>
+    </a>
+    <button class="icon-btn store-search-trigger" type="button" data-store-search aria-label="Search clothing">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+    </button>
+    <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <img class="cart-icon" src="Cart Logo.png" alt="" />
+        <span class="cart-label">CART</span>
+        <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-products" aria-label="Products">
+      <div class="grid shop-grid" id="shopGrid"></div>
+      <p class="collection-empty" id="shopEmpty" hidden>No products in this collection yet. Check back soon.</p>
+    </section>
+  </main>
+
+  <footer class="shop-footer">
+    <a href="index.html">FLYEST</a>
+    <span>Made with style. Worldwide shipping.</span>
+    <a href="help.html">Need help?</a>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div class="cart-head-copy">
+        <span class="cart-head-kicker">FLYEST · YOUR PICKS</span>
+        <div class="cart-head-title-row"><span class="cart-head-title">Your Cart</span><span class="cart-head-count" id="cartHeaderCount">0 ITEMS</span></div>
+      </div>
+      <button class="icon-btn cart-close-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span class="cart-empty-mark" aria-hidden="true">F</span>
+        <p class="cart-empty-title">Your next favorite belongs here.</p>
+        <p class="cart-empty-note">Explore the collection and find the piece that feels like you.</p>
+        <a class="cart-empty-link" href="index.html#new-collection">EXPLORE THE COLLECTION <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-shipping-note"><span class="cart-shipping-check" aria-hidden="true">↗</span><span>Worldwide shipping rates at checkout</span><span class="cart-shipping-courier">J&amp;T</span></div>
+      <div class="cart-total-row"><span>Subtotal</span><span id="cartTotal">₱0.00</span></div>
+      <p class="cart-total-caption">Shipping is calculated at checkout based on destination.</p>
+      <a class="btn checkout-btn" href="index.html?checkout=1"><span>CONTINUE TO CHECKOUT</span><span class="checkout-arrow" aria-hidden="true">↗</span></a>
+      <a class="cart-continue-shopping" href="index.html#new-collection">CONTINUE EXPLORING</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script src="shop.js"></script>
+  <script src="store-assistant.js"></script>
+  <script src="store-nav.js"></script>
+</body>
+</html>

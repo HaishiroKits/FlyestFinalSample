@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLYEST — Hoodie</title>
+  <link rel="icon" type="image/jpeg" href="Flyest Logo.jpg" />
+  <link rel="stylesheet" href="liberation-font.css" />
+  <link rel="stylesheet" href="hoodie.css" />
+  <link rel="stylesheet" href="product-preview.css" />
+  <link rel="stylesheet" href="store-assistant.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="quantity.css" />
+  <link rel="stylesheet" href="store-nav.css" />
+  <link rel="stylesheet" href="white-theme.css" />
+</head>
+<body>
+
+  <div class="announcement">WORLDWIDE SHIPPING — RATES AT CHECKOUT</div>
+
+  <header class="p-header">
+    <a class="p-logo" href="index.html">FLYEST</a>
+    <nav class="primary-nav" id="nav" aria-label="Main navigation">
+      <div class="primary-nav-item shop-menu">
+        <button class="primary-nav-link shop-menu-toggle" type="button" aria-expanded="false" aria-controls="shopMegaMenu">Shop <span aria-hidden="true">⌄</span></button>
+        <div class="shop-mega-menu" id="shopMegaMenu">
+          <div class="shop-mega-categories" role="tablist" aria-label="Shop categories">
+            <button class="mega-category is-active" type="button" role="tab" aria-selected="true" data-mega-category="clothing">Clothing <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="mens">Men's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="womens">Women's <span aria-hidden="true">›</span></button>
+            <button class="mega-category" type="button" role="tab" aria-selected="false" data-mega-category="accessories">Accessories <span aria-hidden="true">›</span></button>
+          </div>
+          <div class="shop-mega-panels">
+            <section class="shop-mega-panel is-active" role="tabpanel" data-mega-panel="clothing"><h2>Clothing</h2><a href="shop.html?category=shirts">Tees</a><a href="shop.html?category=hoodies">Hoodies</a><a href="shop.html?category=sweaters">Sweaters</a><a href="shop.html?category=polos">Polos</a><a href="shop.html?category=pants">Pants</a><a href="shop.html?category=shorts">Shorts</a><a href="shop.html?category=footwear">Footwear</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="mens" hidden><h2>Men's</h2><a href="shop.html?category=mens">Shop Men's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="womens" hidden><h2>Women's</h2><a href="shop.html?category=womens">Shop Women's</a></section>
+            <section class="shop-mega-panel" role="tabpanel" data-mega-panel="accessories" hidden><h2>Accessories</h2><a href="shop.html?category=headwear">Headwear</a></section>
+          </div>
+        </div>
+      </div>
+      <a class="primary-nav-link" href="index.html#new-collection">New Collections</a>
+      <a class="primary-nav-link" href="index.html#best-seller">Best Seller</a>
+    </nav>
+    <div class="p-header-tools">
+      <a class="header-signup icon-btn" href="index.html#communitySignup" aria-label="Sign up for collection alerts" title="Sign up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="8" r="3.5"></circle>
+          <path d="M3 20v-1.5a6 6 0 0 1 12 0V20M19 8v6M16 11h6"></path>
+        </svg>
+      </a>
+      <button class="store-search-trigger" type="button" data-store-search aria-label="Search clothing">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+    <button class="p-cart" id="cartBtn" aria-label="Cart">
+      <img class="cart-icon" src="Cart Logo.png" alt="" />
+      <span class="cart-label">CART</span>
+      <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+    </button>
+    </div>
+  </header>
+
+  <div class="p-breadcrumb"><a href="index.html">Shop</a> / <a href="index.html#new-collection">New Collection</a> / <span id="crumbName">Flyest Hoodie</span></div>
+  <main class="p-main">
+    <div class="p-img-wrap">
+      <img id="pImg" src="" alt="FLYEST Hoodie" />
+    </div>
+
+    <div class="p-info">
+      <span class="p-overline">FLYEST · THE HOODIE COLLECTION</span>
+      <h1 id="pName">FLYEST HOODIE</h1>
+      <p class="p-price" id="pPrice">₱1,700.00</p>
+      <p class="p-ship">WORLDWIDE SHIPPING · RATES AT CHECKOUT</p>
+
+      <h3 class="p-label">CHOOSE SIZE</h3>
+      <div class="size-row" id="sizeRow">
+        <button class="size-btn" data-size="M">M</button>
+        <button class="size-btn" data-size="L">L</button>
+        <button class="size-btn" data-size="XL">XL</button>
+        <button class="size-btn" data-size="2XL">2XL</button>
+        <button class="size-btn" data-size="3XL">3XL</button>
+      </div>
+      <p class="p-hint" id="sizeHint">Select a size</p>
+      <div class="quantity-picker">
+        <span class="p-label">QUANTITY</span>
+        <div class="quantity-control" aria-label="Choose quantity">
+          <button class="quantity-button" id="quantityDecrease" type="button" aria-label="Decrease quantity">−</button>
+          <input id="quantityInput" type="number" min="1" step="1" value="1" inputmode="numeric" aria-label="Quantity" />
+          <button class="quantity-button" id="quantityIncrease" type="button" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <button class="btn p-add" id="addBtn" disabled>SELECT A SIZE TO ADD</button>
+
+      <div class="p-details">
+        <h4>DETAILS</h4>
+        <ul>
+          <li>Heavyweight fleece hoodie, oversized fit</li>
+          <li>"Flyest Worldwide" front print</li>
+          <li>Unisex — true to size, size down for regular fit</li>
+          <li>Exchanges allowed within 7–14 days (wrong size OK)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <section class="p-also">
+    <h2 class="p-also-title">— YOU MIGHT ALSO LIKE —</h2>
+    <div class="also-grid" id="alsoGrid"></div>
+  </section>
+
+  <footer class="p-footer">
+    <div class="p-footer-links"><div><strong>SHOP</strong><a href="index.html#new-collection">New Collection</a><a href="index.html#best-seller">Best Seller</a></div><div><strong>HELP</strong><a href="help.html">Shipping &amp; Returns</a><a href="mailto:flyestclothing.ph@gmail.com">Contact</a></div><div><strong>FOLLOW</strong><a href="https://instagram.com/flyest.ph" target="_blank" rel="noopener">Instagram — @flyest.ph</a></div></div>
+    <p>© 2026 FLYEST. EST. 2023. MADE WITH STYLE.</p>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div class="cart-head-copy">
+        <span class="cart-head-kicker">FLYEST · YOUR PICKS</span>
+        <div class="cart-head-title-row"><span class="cart-head-title">Your Cart</span><span class="cart-head-count" id="cartHeaderCount">0 ITEMS</span></div>
+      </div>
+      <button class="icon-btn cart-close-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span class="cart-empty-mark" aria-hidden="true">F</span>
+        <p class="cart-empty-title">Your next favorite belongs here.</p>
+        <p class="cart-empty-note">Explore the collection and find the piece that feels like you.</p>
+        <a class="cart-empty-link" href="shop.html?category=hoodies">EXPLORE THE COLLECTION <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-shipping-note"><span class="cart-shipping-check" aria-hidden="true">↗</span><span>Worldwide shipping rates at checkout</span><span class="cart-shipping-courier">J&amp;T</span></div>
+      <div class="cart-total-row"><span>Subtotal</span><span id="cartTotal">₱0.00</span></div>
+      <p class="cart-total-caption">Shipping is calculated at checkout based on destination.</p>
+      <a class="btn checkout-btn" href="index.html?checkout=1"><span>CONTINUE TO CHECKOUT</span><span class="checkout-arrow" aria-hidden="true">↗</span></a>
+      <a class="cart-continue-shopping" href="shop.html?category=hoodies">CONTINUE EXPLORING</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script src="hoodie.js"></script>
+  <script src="store-assistant.js"></script>
+  <script src="store-nav.js"></script>
+</body>
+</html>
